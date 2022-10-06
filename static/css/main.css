@@ -1,0 +1,466 @@
+:root {
+    --base-font-color: rgb(255, 255, 255);
+    --primary-color: black;
+    --secondary-color: #100C25;
+    --highlight-color: hsl(98, 23%, 50%);
+
+}
+* {
+    transition: all .1s ease-in-out;
+}
+
+body {
+    font-family: "Rubik Dirt", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--base-font-color);
+    overflow-x: hidden;
+    /* height: 400vh; */
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    /* display: inline-block; */
+    /* font-family: "Raleway", Arial, Helvetica, sans-serif; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+/* index style */
+#main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-half {
+    padding: 20px;
+    height: auto;
+    min-height: 400vh;
+    /* border: 1px solid white; */
+}
+
+.site-half.right-half {
+    width: 35%;
+    position: relative;
+    /* background-color: #5A5959; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#right-half-content-holder {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+}
+
+.site-half.left-half {
+    width: 65%;
+    position: relative;
+}
+
+.site-half.right-half::before {
+    content: '';
+    position: absolute;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: -10vh;
+    transform-origin: bottom left;
+    transform: skewX(-3deg);
+    width: 90vh;
+    height: 100%;
+}
+
+#site-heading {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+    display: inline-block;
+    transition: all .2s ease;
+    font-size: 2em;
+    z-index: 1;
+}
+
+#profile-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#profile-pic-wrapper {
+    display: inline-block;
+}
+
+#profile-pic {
+    height: 400px;
+    /* border-radius: 100%; */
+
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#quote p:nth-child(1) {
+    width: 50%;
+    /* border: 1px solid white; */
+    padding: 10px;
+    /* border-radius: 10px; */
+    text-align: center;
+}
+
+section.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    /* top: 0; */
+    
+    z-index: 0;
+    height: 100vh;
+    width: 115%;
+    margin-left: -20px;
+    /* background-color: red; */
+    /* background-color: rgba(196, 37, 37, 0.906); */
+}
+
+section.left-section div:nth-child(1) {
+    width: 500px;
+    font-size: 1.75em;
+}
+
+#section0 {
+    top: 0;
+    background-color: #DD5C22;
+
+}
+
+#section1 {
+    top: 100vh;
+    background-color: #789D62;
+}
+
+#section2 {
+    top: 200vh;
+    background-color: rgba(196, 37, 37, 0.906);
+}
+
+#section3 {
+    top: 300vh;
+    background-color: #c3208c;
+
+}
+
+#section1::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 60vh;
+    transform-origin: bottom left;
+    transform: skewX(3deg);
+    width: 80vh;
+    height: 100%;
+    z-index: -1;
+}
+
+#section2::after {
+    content: '';
+    position: absolute;
+    background-color: #1ECBE1;
+    bottom: 0;
+    left: 0vh;
+    transform-origin: bottom left;
+    transform: skewX(45deg);
+    width: 80vh;
+    height: 100%;
+}
+
+#section3::after {
+    content: '';
+    position: absolute;
+    background-color: #A9A80A;
+    bottom: 0;
+    left: 0vh;
+    transform-origin: bottom left;
+    transform: skewX(-50deg);
+    width: 110vh;
+    height: 100%;
+    z-index: -1;
+}
+
+.site-half.left-half section:nth-child(2) {
+    /* top: 1000px; */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+section.left-section div:nth-child(2) {
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+
+
+#scroll-down {
+    position: absolute;
+    font-size: 60px;
+    bottom: -50px;
+    animation-name: scrollDown;
+    animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+  }
+
+#resume-icon {
+    position: absolute;    
+    bottom: 0;
+    font-size: 60px;
+    color: white;
+    animation-name: resume;
+    animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes resume {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+        color: rgba(146, 146, 18, 0.872);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+  }
+
+
+.right-half-sections.right-half-extra {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+
+/* a.logo-links {
+
+}  */
+
+a.logo-links img {
+    width: 50px;
+    height: 50px;
+}
+
+/* end index style */
+
+
+
+
+
+
+
+
+/* start resume style */
+
+
+#site-wrapper.page.resume-page {
+    /* font-family: "Raleway", Arial, Helvetica, sans-serif; */
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+#site-heading.resume-heading {
+    display: block;
+    /* font-family: "Rubik Dirt", Arial, Helvetica, sans-serif; */
+
+
+}
+
+#site-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    min-height: 100vh;
+    /* border: 1px solid white; */
+    /* padding: 10px; */
+}
+
+.resume-section {
+
+    /* background-color: white; */
+    /* border-radius: 20px; */
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+
+.resume-section h1 {
+    text-align: center;
+}
+
+.resume-section h1.resume-section-heading {
+    text-align: left;
+    font-size: 2em;
+}
+
+.resume-section.resume-body {
+    border-left: 5px solid var(--highlight-color);
+}
+.resume-section.resume-body p {
+    margin: 0;
+    text-align: left;
+
+}
+
+
+.resume-section.resume-body:hover {
+    cursor: pointer;
+    border-left-width: 10px;
+    /* border-left-color: orange; */
+
+    /* transform: scale(1.1) */
+}
+
+#experience-headings{
+    display: flex;
+    justify-content: space-between;
+}
+
+span.skills-intro {
+    color: orange;
+}
+/* end resume style */
+
+
+
+
+/* start hobbies style */
+#site-wrapper.page.hobbies-page {
+    padding: 20px;
+}
+
+p#hobbie-populate-name {
+    min-height: 70px;
+    font-size: 1.5em;
+    /* border-left: 2px solid white; */
+
+    min-width: 500px;
+
+}
+
+p#hover-instruct {
+    animation-name: hobbies-instruct;
+    animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    height: 50px;
+}
+
+@keyframes hobbies-instruct {
+    0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        color: rgba(146, 146, 18, 0.872);
+        opacity: 1;
+        
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+
+    }
+
+  }
+
+.hobbies-container {
+    width: 70%;
+    height: 500px;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-template-rows:  40% 40%;
+    padding: 10px;
+    gap: 30px;
+}
+
+.hobbie-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.7; */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hobbie-item p {
+    display: none;
+}
+
+
+.hobbie-item:hover {
+    /* opacity: 1; */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* end hobbies style */
