@@ -16,87 +16,64 @@
     <!-- 
 
         INCLUDE NOTES PAGE
-
+        CHANGE THEME/CHANGE BACKGROUND
+        ADD TXT FILES
+        PLAYLIST PAGE WITH FAVORITE SONGS
+        FAVORITES PAGE => SONG, MOVIE, BOOK
      -->
-    <div id="site-wrapper">
-        <div id="main-content">
-            <div class="site-half left-half">
-                <h1 id="site-heading">Matthew Carby</h1>
-                <section id="section0" class="left-section">
-                    <div>
-                        <p>
-                            My name is Matthew Carby. I am a 20 year old sophomore majoring in Computer Science.
-                            I am an aspiring Security Analyst and/or Web Developer. I love coding and especially
-                            love building websites like this one. 
-                        </p>
-                    </div>
-                    <div>
-                        <span id="scroll-down" class="material-symbols-outlined">
-                            arrow_downward
-                        </span>
-                    </div>
-                </section>
-                <section id="section1" class="left-section">
-                    <div>
-                        <p>
-                            Click to see my resume :)
-                        </p>
-                    </div>
-                    <div>
-                        <a href="resume.html">
-                            <span id="resume-icon" class="material-symbols-outlined">
-                                description
-                            </span>
-                        </a>
-                    </div>
+    <div id="site-wrapper" class="page homepage">
+        <nav id="navbar">
+          <a href="index.html" id="name">Matthew Carby</a>
+          <div id="site-links">
+            <a href="index.html" class="active-page">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="ranking.html">Rankings</a>
+            <a href="gaming.html">Gaming</a>
 
-                </section>
-                <section id="section2" class="left-section">
-                    <div>
-                        <p>
-                            Click to see my Hobbies :)
-                        </p>
-                    </div>
-                    <div>
-                        <a href="hobbies.html">
-                            <span id="resume-icon" class="material-symbols-outlined">
-                                sports_esports
-                            </span>
-                        </a>
-                    </div>
-                </section>
-                <section id="section3" class="left-section">
-                    <div>
-                        <p>
-                            Click to see my Hobbies :)
-                        </p>
-                    </div>
-                </section>
+          </div>
+    
+        </nav>
+        <div id="site-content">
+            <div id="video-holder">
+                <video id="background-vid" autoplay muted>
+                    <source src="../static/images/background-vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>   
             </div>
-            <div class="site-half right-half">
-                <div id="right-half-content-holder">
-                    <div id="profile-holder" class="right-half-sections right-half-top">
-                        <div id="profile-pic-wrapper">
-                            <img id="profile-pic" src="../static/images/profile bg removed.png" alt="profile picture of Matthew Carby">
-                        </div>
+            <div id="homepage-body">
+                <div class="site-section site-left">
+                    <div class="section-body" id="left-body">
+                      <div>
+                        <img src="../static/images/shaw.png" alt="shaw-uni-logo">
+                      </div>
+                        <p>
+                          My name is Matthew Carby. I am a 20 year old sophomore majoring in Computer Science.
+                          I am an aspiring Security Analyst and/or Web Developer. I love coding and especially
+                          love building websites like this one.
+                        </p>
                     </div>
-                    <div class="right-half-sections right-half-bot">
-                        <div id="quote">
-                            <p>
-                                “We have two ears and one mouth so that we can listen twice as much as we speak.”
-                            </p>
-                            <p>-Epictetus</p>
-                        </div>
-                    </div>
-                    <div class="right-half-sections right-half-extra">
+                </div>
+                <div class="site-section site-right">
+                  <div class="section-body" id="right-body">
+                    <div id="profile-holder">
+                      <img src="../static/images/profile bg removed.png" alt="profile-pic">
+                      <!-- <div id="quote">
+                        <p>
+                            “We have two ears and one mouth so that we can listen twice as much as we speak.”
+                        </p>
+                        <p>-Epictetus</p>
+                      </div> -->
+                      <div id="right-body-extra">
                         <a href="https://www.linkedin.com/in/matthewcarby/" class="logo-links" target="_blank"><img src="../static/images/linkedin.png" alt="linkedin icon"></a>
                         <a href="https://github.com/MattKen18" class="logo-links" target="_blank"><img src="../static/images/github1.png" alt="github icon"></a>
                         <a href="mailto:matthewcarby18@gmail.com" class="logo-links" target="_blank"><img src="../static/images/gmail.png" alt="gmail icon"></a>
                         <a href="https://www.instagram.com/mattkc_11502/" class="logo-links" target="_blank"><img src="../static/images/instagram.webp" alt="instagram icon"></a>
-                    
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     <script src="../static/js/script.js"></script>
