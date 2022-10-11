@@ -1,7 +1,7 @@
 Matthew Carby Notes page
 
 1. Colored background on all pages
-2. Picture of myself of home/index page
+2. Picture of myself on home/index page
 3. Numbered list of three favorite websites on ranking page
 4. Bulleted list of favorite things on ranking page
 5. Table used to organize layout on ranking page
@@ -10,3 +10,4 @@ Matthew Carby Notes page
 8. Image overlay on hobbies page
 9. Shadow Effects on rankings page when hovered over rankings column
 10. Image Transparency/opacity on hobbies page
+11. Different color types (hex, hsl, rgb, rgba) on all pages

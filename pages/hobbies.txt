@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Rubik+Dirt&family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Hobbies</title>
+</head>
+<body scroll="no">
+    <div id="site-wrapper" class="page hobbiespage">
+        <nav id="navbar">
+            <a href="index.html" id="name">Matthew Carby</a>
+            <div id="site-links">
+              <a href="index.html">Home</a>
+              <a href="resume.html">Resume</a>
+              <a href="hobbies.html"  class="active-page">Hobbies</a>
+              <a href="ranking.html">Rankings</a>
+              <a href="gaming.html">Gaming</a>
+
+            </div>
+        </nav>
+        <div id="site-content" scroll="no">
+            <div id="hobbies-instruct">
+                <div>
+                    <p>Click to see my hobbies</p>
+                    <br>
+                    <a href="#hobbie0" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                </div>
+            </div>
+
+            <div id="hobbies-container">
+                <div id="hobbie0" class="hobbie-wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="league.jfif">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">League of Legends</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#hobbie1" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>        
+                    </div>
+                </div>
+
+                <div id="hobbie1" class="hobbie-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="coding">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">Coding</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#hobbie0" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#hobbie2"class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>        
+                    </div>
+                </div>
+
+                <div id="hobbie2" class="hobbie-wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="music.png">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">Music</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#hobbie1" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#hobbie3" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>       
+                    </div>
+                </div>
+
+                <div id="hobbie3" class="hobbie-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="reading.jpg">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">Reading</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#hobbie2" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#hobbie4" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>       
+                    </div>
+                </div>
+
+                <div id="hobbie4" class="hobbie-wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="social.png">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">Social Media</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#hobbie3" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#hobbie5" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>       
+                    </div>
+                </div>
+
+                <div id="hobbie5" class="hobbie-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="hobbie-item" data-value="sleeping.png">
+                    </div>
+                    <div>
+                        <p class="hobbie-text">Sleeping</p>
+                        <br>
+                        <div class="hobbies-scroll-control">
+                            <a href="#hobbie4" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_upward</span></button></a>
+                            <a href="#" class="hobbies-btn"><button><span class="material-symbols-outlined">arrow_downward</span></button></a>
+                        </div>       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../static/js/hobbies.js"></script>
+</body>
+</html>
