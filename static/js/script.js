@@ -1,14 +1,6 @@
-window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-    const scrollDownIcon = document.getElementById('scroll-down');
-    const scrollDownIconStyle = getComputedStyle(scrollDownIcon);
-    
-    if (scrollPos > 100) {
-        scrollDownIcon.style.display = "none";        
-    } else {
-        if (scrollDownIconStyle.display === "" || scrollDownIconStyle.display === "none") {
-            scrollDownIcon.style.display = "inline-block";       
-        }
-    }
-})
+let video = document.getElementById("background-vid");
 
+// replays background video when it stops
+setInterval(() => {
+    video.currentTime = 0;
+}, 80000)
